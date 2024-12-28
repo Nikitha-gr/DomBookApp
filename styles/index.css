@@ -1,0 +1,36 @@
+#loginform {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 103, 213);
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+form>input {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#submitBtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: blueviolet;
+}
+
+#submitBtn:hover {
+    background-color: blueviolet;
+    color: white;
+}
