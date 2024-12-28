@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
     if (email == "admin@empher.com" && password == "empher@123") {
         alert("Logged in as Admin")
         window.location.href = "admin.html";
-        fetch(`${loacalurl}`, {
+        fetch(`${loacalurl}/loginData`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -19,14 +19,14 @@ form.addEventListener("submit", (event) => {
             body: JSON.stringify(`Email:${email},Password:${password}`),
         }).then(() => {
             alert("Admin Login Successfull")
-        }).catch((err)=>{
+        }).catch((err) => {
             alert("Something Went Wrong")
         })
     }
     else if (email == "user@empher.com" && password == "user@123") {
         alert("Logged in as User")
         window.location.href = "books.html";
-        fetch(`${loacalurl}`, {
+        fetch(`${loacalurl}/loginData`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -34,7 +34,7 @@ form.addEventListener("submit", (event) => {
             body: JSON.stringify(`Email:${email},Password:${password}`),
         }).then(() => {
             alert("User Login Successfull")
-        }).catch((err)=>{
+        }).catch((err) => {
             alert("Something Went Wrong")
         })
     }

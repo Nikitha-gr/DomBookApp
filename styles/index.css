@@ -1,4 +1,4 @@
-#loginform {
+#loginform,#adminform {
     display: flex;
     width: 50%;
     margin: auto;
@@ -22,10 +22,21 @@ form>input {
     font-size: 1.5rem;
 }
 
+form>select {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+}
+
 #submitBtn {
     border: none;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: white;
     color: blueviolet;
 }
@@ -33,4 +44,14 @@ form>input {
 #submitBtn:hover {
     background-color: blueviolet;
     color: white;
+}
+
+.bookcard {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgb(160, 103, 213);
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
